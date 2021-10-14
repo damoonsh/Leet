@@ -1,4 +1,4 @@
-*
-*/
-!*.rs
-!*.py
+
+__pycache__/
+/Cracking/ch1/__pycache__/
+/Cracking/ch2/__pycache__/
