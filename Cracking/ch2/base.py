@@ -30,26 +30,17 @@ class LinkedListMaker:
 
         return head
 
+def Print(h: Node):
+    while h != None:
+        print(h._data, ' ',end='')
+        h = h._next
+    print()
+
+def bPrint(h: Node):
+    while h != None:
+        print(h._data, ' ',end='')
+        h = h._prev
+    print()    
 l = [1,10,9,5,4,10]
 
 h = LinkedListMaker(l).generate()
-
-
-# Question: In an unsorted linked list, how do we remove duplicates
-
-# we get the first value then look through the rest of the 
-
-
-def dups(l: Node):
-    while l != None:
-        if check(l._next, l._data):
-            return True
-        l = l._next
-    return False
-
-def check(l: Node, val: int):
-    while l != None:
-        if l._data == val: return True
-        l = l._next
-
-    return False
